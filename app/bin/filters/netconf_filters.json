@@ -9,14 +9,14 @@
         "state": {
             "ospf": "",
             "isis": "<isis xmlns=\"http://cisco.com/ns/yang/Cisco-IOS-XR-clns-isis-oper\"/>",
-            "lldp": ""
+            "lldp": "<lldp xmlns=\"http://cisco.com/ns/yang/Cisco-IOS-XR-ethernet-lldp-oper\"/>"
         }
     },
     "sros": {
         "state": {
             "ospf": "",
             "isis": "<state xmlns=\"urn:nokia.com:sros:ns:yang:sr:state\"><port/><router><router-name>Base</router-name><isis/></router></state>",
-            "lldp": ""
+            "lldp": "<state xmlns=\"urn:nokia.com:sros:ns:yang:sr:state\"><port/></state>"
         }
     }
 }

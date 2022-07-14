@@ -7,7 +7,7 @@ This tool allows you provide insights how you can draw any network topology you 
 - You have access to YANG modules or knows how to retrieve them from a network device via NETCONF
 - You have some Python knowledge
 
-The provided demo builds physical network connectivity's topology between Cisco Nexus 9000 devices leveraging CDP and OSPF information. However, it can be easy extensible to draw any other topology.
+Originally, the provided demo built physical network connectivity's topology between Cisco Nexus 9000 devices leveraging CDP and OSPF information. Later it was extended with furtehr vendors and topologies
 
 ## Frameworks used
 - Nornir for managing interaction with devices in a threaded way
@@ -44,6 +44,7 @@ $ python main.py --topology cdp --format static
 ### Topologies
 - CDP
 - OSPF
+- ISIS
 
 ### Visualisation
 - `static` leverages Graphviz to create static PNG image.

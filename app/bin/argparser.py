@@ -36,7 +36,7 @@ def get_args() -> Any:
         type=str,
         required=True,
         choices=[
-            "cdp", "ospf", "isis"
+            "cdp", "ospf", "isis", "lldp"
         ],
         default="cdp",
         help="Select network topology type",
