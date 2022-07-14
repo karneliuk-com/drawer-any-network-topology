@@ -1,0 +1,8 @@
+---
+cisco_nexus:
+  platform: nxos
+cisco_iosxr:
+  platform: iosxr
+nokia_sros:
+  platform: sros
+...

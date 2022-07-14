@@ -1,0 +1,7 @@
+nornir
+nornir_utils
+nornir_scrapli
+xmltodict
+networkx
+pygraphviz
+pyvis

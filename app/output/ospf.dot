@@ -1,0 +1,161 @@
+strict graph "" {
+	graph [label="OSPF Network Topology"];
+	node [label="\N"];
+	"c-1-s1"	[color="#104E8B",
+		fontcolor="#FFFFFF",
+		label="c-1-s1",
+		node_type=device,
+		shape=oval,
+		style=filled];
+	"c-1-s1_vlan30"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="vlan30
+IP: 192.168.30.2/24
+area: 0.0.0.30",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1" -- "c-1-s1_vlan30"	[penwidth=3.0];
+	"c-1-s1_lo0"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="lo0
+IP: 192.168.255.128/32
+area: 0.0.0.0",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1" -- "c-1-s1_lo0"	[penwidth=3.0];
+	"c-1-s1_eth1/1"	[color="#009ACD",
+		connect_to=None,
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="eth1/1
+IP: 192.168.255.1/31
+area: 0.0.0.0",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1" -- "c-1-s1_eth1/1"	[penwidth=3.0];
+	"c-1-s1_vlan20"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="vlan20
+IP: 192.168.20.2/24
+area: 0.0.0.20",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1" -- "c-1-s1_vlan20"	[penwidth=3.0];
+	"c-1-s1_vlan2"	[color="#009ACD",
+		fontcolor="#000000",
+		label="vlan2
+IP: 192.168.2.0/31
+area: 0.0.0.0",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1" -- "c-1-s1_vlan2"	[penwidth=3.0];
+	"c-1-s1_vlan10"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="vlan10
+IP: 192.168.10.2/24
+area: 0.0.0.10",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1" -- "c-1-s1_vlan10"	[penwidth=3.0];
+	"c-1-s2_vlan2"	[color="#009ACD",
+		fontcolor="#000000",
+		label="vlan2
+IP: 192.168.2.1/31
+area: 0.0.0.0",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s1_vlan2" -- "c-1-s2_vlan2";
+	"c-1-s2"	[color="#104E8B",
+		fontcolor="#FFFFFF",
+		label="c-1-s2",
+		node_type=device,
+		shape=oval,
+		style=filled];
+	"c-1-s2_vlan30"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="vlan30
+IP: 192.168.30.3/24
+area: 0.0.0.30",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s2" -- "c-1-s2_vlan30"	[penwidth=3.0];
+	"c-1-s2_vlan20"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="vlan20
+IP: 192.168.20.3/24
+area: 0.0.0.20",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s2" -- "c-1-s2_vlan20"	[penwidth=3.0];
+	"c-1-s2" -- "c-1-s2_vlan2"	[penwidth=3.0];
+	"c-1-s2_lo0"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="lo0
+IP: 192.168.255.129/32
+area: 0.0.0.0",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s2" -- "c-1-s2_lo0"	[penwidth=3.0];
+	"c-1-s2_eth1/1"	[color="#009ACD",
+		connect_to=None,
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="eth1/1
+IP: 192.168.255.3/31
+area: 0.0.0.0",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s2" -- "c-1-s2_eth1/1"	[penwidth=3.0];
+	"c-1-s2_vlan10"	[color="#009ACD",
+		fillcolor="#000000",
+		fontcolor="#FFFFFF",
+		label="vlan10
+IP: 192.168.10.3/24
+area: 0.0.0.10",
+		node_type=interface,
+		shape=box,
+		style=filled];
+	"c-1-s2" -- "c-1-s2_vlan10"	[penwidth=3.0];
+	"c-1-l1"	[color="#104E8B",
+		fontcolor="#FFFFFF",
+		label="c-1-l1",
+		node_type=device,
+		shape=oval,
+		style=filled];
+	"c-1-l2"	[color="#104E8B",
+		fontcolor="#FFFFFF",
+		label="c-1-l2",
+		node_type=device,
+		shape=oval,
+		style=filled];
+	"c-1-l3"	[color="#104E8B",
+		fontcolor="#FFFFFF",
+		label="c-1-l3",
+		node_type=device,
+		shape=oval,
+		style=filled];
+	"c-1-l4"	[color="#104E8B",
+		fontcolor="#FFFFFF",
+		label="c-1-l4",
+		node_type=device,
+		shape=oval,
+		style=filled];
+}

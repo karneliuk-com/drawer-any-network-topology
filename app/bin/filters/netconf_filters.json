@@ -1,0 +1,22 @@
+{
+    "nxos": {
+        "state": {
+            "ospf": "<System xmlns=\"http://cisco.com/ns/yang/cisco-nx-os-device\"><ospf-items/></System>",
+            "cdp": "<System xmlns=\"http://cisco.com/ns/yang/cisco-nx-os-device\"><cdp-items/></System>"
+        }
+    },
+    "iosxr": {
+        "state": {
+            "ospf": "",
+            "isis": "<isis xmlns=\"http://cisco.com/ns/yang/Cisco-IOS-XR-clns-isis-oper\"/>",
+            "lldp": ""
+        }
+    },
+    "sros": {
+        "state": {
+            "ospf": "",
+            "isis": "<state xmlns=\"urn:nokia.com:sros:ns:yang:sr:state\"><port/><router><router-name>Base</router-name><isis/></router></state>",
+            "lldp": ""
+        }
+    }
+}
