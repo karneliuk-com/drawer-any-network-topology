@@ -71,24 +71,22 @@ class Topographer:
         This helper method is used to interconnect disjoint nodes, where applicable
         """
         for node in self.__graph.nodes.data():
+            print(node)
             if "connect_to" in node[1]:
                 if isinstance(node[1]["connect_to"], dict):
-                    if node[1]["connect_to"]["type"] == "node":
+                    if node[1]["connect_to"]["type"] == "node" and\
+                           node[1]["connect_to"]["value"] in self.__graph.nodes():
                         # Add edge
                         self.__graph.add_edge(node[0], node[1]["connect_to"]["value"])
 
                         # Remove connector metadata
-                        if "connect_to" in self.__graph.nodes[node[1]["connect_to"]]:
+                        if "connect_to" in self.__graph.nodes[node[1]["connect_to"]["value"]]:                            
                             del self.__graph.nodes[node[1]["connect_to"]["value"]]["connect_to"]
 
                         del self.__graph.nodes[node[0]]["connect_to"]
 
                     else:
                         for node2 in self.__graph.nodes.data():
-                            print("--------------")
-                            print(node)
-                            print(node2)
-                            print("--------------")
                             if node[1]["connect_to"]["type"] in node2[1] and\
                                     node2[1][node[1]["connect_to"]["type"]] == node[1]["connect_to"]["value"]:
                                 # Add edge

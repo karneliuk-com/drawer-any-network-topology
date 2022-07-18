@@ -80,7 +80,7 @@ def build_one_node(node_data: tuple, **kwargs) -> Any:
                            penwidth=3.0)
 
     except KeyError as err:
-        print(f"Skipping node {node_data[0]} as it doesn't have OSPF inforamtion: {err}.")
+        print(f"Skipping node {node_data[0]} as it doesn't have ISIS inforamtion: {err}.")
 
     # Find neighbors
     iter_data = node_data[1]["collected"]["rpc-reply"]["data"]["isis"]["instances"]\

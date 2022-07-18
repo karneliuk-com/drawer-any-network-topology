@@ -45,6 +45,7 @@ $ python main.py --topology cdp --format static
 - CDP
 - OSPF
 - ISIS
+- LLDP
 
 ### Visualisation
 - `static` leverages Graphviz to create static PNG image.

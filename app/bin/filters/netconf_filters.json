@@ -9,7 +9,8 @@
         "state": {
             "ospf": "",
             "isis": "<isis xmlns=\"http://cisco.com/ns/yang/Cisco-IOS-XR-clns-isis-oper\"/>",
-            "lldp": "<lldp xmlns=\"http://cisco.com/ns/yang/Cisco-IOS-XR-ethernet-lldp-oper\"/>"
+            "lldp": "<lldp xmlns=\"http://cisco.com/ns/yang/Cisco-IOS-XR-ethernet-lldp-oper\"/>",
+            "test": "<network-instances xmlns=\"http://openconfig.net/yang/network-instance\"><network-instance><name>DEFAULT</name><isis/></network-instance></network-instances>"
         }
     },
     "sros": {

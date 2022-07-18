@@ -6,4 +6,5 @@ links.txt
 **/temp.json
 **/yang/
 **/output/isis.*
+**/output/lldp.*
 app/inventory/hosts.yaml

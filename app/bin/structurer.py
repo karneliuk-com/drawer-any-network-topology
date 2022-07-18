@@ -31,7 +31,7 @@ def prepare_data_for_graph(inventory, results) -> dict:
                 result[host_name]["platform"] = inv_dict["defaults"]["platform"]
 
         try:
-            result[host_name]["collected"] = xmltodict.parse(results[host_name][0].result)
+            result[host_name]["collected"] = xmltodict.parse(results[host_name][1].result)
 
         except (ValueError, KeyError, xml.parsers.expat.ExpatError) as err:
             print(f"{host_name}: Error with results: {err}")
